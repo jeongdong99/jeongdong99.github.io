@@ -1,0 +1,75 @@
+.introduction h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: right;
+  padding-bottom: 20px;
+  color: white;
+}
+.introduction p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 3.5rem;
+  padding-top: 20px;
+}
+.font_highlight {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 0.3rem;
+  background: linear-gradient(
+      128.93deg,
+      rgb(88, 65, 65) 22.41%,
+      rgb(57, 62, 70) 93.45%
+    )
+    text;
+  -webkit-text-fill-color: transparent;
+}
+.hsla {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.Lets-go-btn {
+  margin-top: 7%;
+  text-align: center;
+  width: 20%;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10rem;
+  background-color: #f4623a;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.arrow-right {
+  position: absolute;
+  border-top: 8px solid white;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent; 
+  margin-top: 8px;
+  margin-left: 9px;
+  animation: horizontal 0.7s ease-in-out infinite;
+}
+.bg_white {
+  background-color: white;
+}
+.color_black{
+  color: black;
+}
+
+@keyframes horizontal {
+  0% {
+    margin-top: 9px;
+  }
+  50% {
+    margin-top: 13px;
+  }
+  100% {
+    margin-top: 9px;
+  }
+}

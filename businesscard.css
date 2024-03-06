@@ -1,0 +1,143 @@
+.business_card {
+  transition: all 0.5s linear;
+  width: 90%;
+  height: 550px;
+  position: relative;
+}
+.business_card .front,
+.business_card .back {
+  height: 100%;
+  width: 100%;
+  border: 3px solid black;
+  backface-visibility: hidden;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.business_card .front {
+  background-color: #ffffff;
+  color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.business_card .back {
+  display: none;
+}
+
+.business_card .front img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.business_card .front .company {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.business_card .front::before {
+  content: "";
+  border-radius: 50%;
+  border: 8px solid #19eedc;
+  position: absolute;
+  height: 130%;
+  width: 280px;
+  transform: rotateZ(50deg);
+}
+
+.business_card .front::after {
+  content: "";
+  border-radius: 50%;
+  border: 8px solid #19eedc;
+  position: absolute;
+  height: 130%;
+  width: 280px;
+  transform: rotateZ(-50deg);
+}
+
+.business_card .back {
+  transition: all 0.5s linear;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #19eedc;
+  transform: perspective(700px) rotateX(-180deg);
+}
+
+.business_card .back .image,
+.business_card .back .info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.business_card .back .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #242424;
+}
+
+.business_card .back .image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #242424;
+  border-radius: 50%;
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+.business_card .back .image h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-block: 8px;
+}
+
+.business_card .back .image h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.business_card .back .info {
+  list-style: none;
+  padding-left: 40px;
+  align-items: flex-start;
+  color: black;
+  padding: 10px 20px;
+}
+
+.business_card .back .info .list {
+  font-size: 20px;
+  line-height: 40px;
+  margin-block: 8px;
+}
+
+.business_card .back .info .list i {
+  margin-right: 16px;
+}
+.profile_inner {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90%;
+}
+.info_div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  color: #242424;
+  flex-direction: column;
+}
+.list > a{
+  color: black;
+  text-decoration: none;
+}

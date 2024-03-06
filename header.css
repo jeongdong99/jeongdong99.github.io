@@ -1,0 +1,70 @@
+header {
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: transparent;
+}
+.hd_content {
+  width: 50%;
+  margin: 0 auto;
+  height: 80px;
+}
+.navbar {
+  width: 50%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar h1 {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 0px;
+}
+
+.navbar li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.navbar li span {
+  padding: 5px 5px;
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-weight: 700;
+}
+
+.navbar li span:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.logo h1 {
+  height: fit-content;
+  width: 100%;
+}
+.logo a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.logo :hover h1 {
+  opacity: 0.5;
+}
+.box_shadow {
+  box-shadow: 0 1px 0.3rem hsla(0, 0%, 80%, 0.8);
+}
