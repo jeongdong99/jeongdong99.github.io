@@ -28,7 +28,9 @@ body::-webkit-scrollbar {
 .bg_yellow {
   background-color: yellow;  
 }
-
+.bg_orange{
+  background-color: orange;  
+}
 .title {
   font-size: 3rem;
   font-family: Black Han Sans, sans-serif;

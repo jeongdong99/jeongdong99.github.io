@@ -50,7 +50,10 @@ window.addEventListener("scroll", function () {
     });
   }
 });
-
+// let's go 버튼 이벤트 등록
+document.querySelector(".Lets-go-btn").addEventListener("click", () => {
+  goToScroll("container"); // container로 스크롤 이동
+});
 // 각 nav에 이벤트 등록
 navbar_elements.forEach((element) => {
   element.addEventListener("click", () => {
@@ -140,3 +143,17 @@ function render() {
   pages.innerText = `${page} /  ${carouselSlide.childElementCount - 2}`;
 }
 render();
+// YouTube 동영상 ID
+const videoId = '-TnehLqyKgM';  // 해당 유튜브 링크의 영상 ID
+
+// iframe 태그를 생성하여 동영상을 삽입
+const iframe = document.createElement('iframe');
+iframe.width = "560";
+iframe.height = "315";
+iframe.src = `https://www.youtube.com/embed/${videoId}`;
+iframe.frameBorder = "0";
+iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+iframe.allowFullscreen = true;
+
+// HTML의 youtube-video div에 iframe 추가
+document.getElementById('youtube-video').appendChild(iframe);
